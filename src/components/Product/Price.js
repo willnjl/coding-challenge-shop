@@ -5,5 +5,5 @@ const convertToCurrency = (price) => {
 };
 
 export default function Price({ price }) {
-  return <span>{convertToCurrency(price)}</span>;
+  return <span class={"price"}>{convertToCurrency(price)}</span>;
 }

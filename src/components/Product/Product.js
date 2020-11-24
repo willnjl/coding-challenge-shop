@@ -20,11 +20,12 @@ export default function Product({ item, handleSubmit }) {
   }, [item.stock]);
 
   return (
-    <div>
+    <div class={"product"}>
       {/* <h2>{item.name}</h2>
-      <img src={item.imgUrl} />
-      <Price price={item.price} /> */}
+       */}
+      <img class={"img"} src={item.imgUrl} />
       <Availible unavailible={unavailible} stock={item.stock} />
+      <Price price={item.price} />
       {/* <Offer /> */}
       <Quantity
         stock={item.stock}
@@ -34,7 +35,7 @@ export default function Product({ item, handleSubmit }) {
       />
       <AddToCart
         handleSubmit={() => handleSubmit(item, quantity)}
-        unavailible={unavailible}
+        unavailible={unavailible || quantity === 0}
       />
     </div>
   );

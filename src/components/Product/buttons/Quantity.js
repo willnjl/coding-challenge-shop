@@ -9,7 +9,7 @@ export default function Quantity({
   return (
     <div className={"btn_container"}>
       <button
-        disabled={unavailible}
+        disabled={unavailible || quantity === 0}
         onClick={() => handleClick(-1)}
         className={"btn-quantity--minus"}
       >

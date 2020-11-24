@@ -30,7 +30,7 @@ export const initItems = [
   {
     id: 3,
     name: "soup",
-    price: 60,
+    price: 0.6,
     imgUrl: "assets/soup.jpeg",
     stock: 5,
     offer: { itemId: 0, discount: (price, coupons) => price * coupons * 0.5 },
