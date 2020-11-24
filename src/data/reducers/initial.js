@@ -1,3 +1,7 @@
+// When you buy a Cheese, you get a second Cheese free!
+// When you buy a Soup, you get a half price Bread!
+// Get a third off Butter!
+
 export const initItems = [
   {
     id: 0,
@@ -24,6 +28,7 @@ export const initItems = [
     stock: 6,
     offer: {
       itemId: 2,
+      description: "When you buy a Cheese, you can have a second Cheese free!",
       discount: (price, coupons) => ((coupons - (coupons % 2)) / 2) * price,
     },
   },
@@ -33,7 +38,11 @@ export const initItems = [
     price: 0.6,
     imgUrl: "assets/soup.jpeg",
     stock: 5,
-    offer: { itemId: 0, discount: (price, coupons) => price * coupons * 0.5 },
+    offer: {
+      itemId: 0,
+      description: "When you buy a Soup, you can have a half price Bread!",
+      discount: (price, coupons) => price * coupons * 0.5,
+    },
   },
   {
     id: 4,
@@ -41,7 +50,11 @@ export const initItems = [
     price: 1.2,
     imgUrl: "assets/butter.jpeg",
     stock: 5,
-    offer: { itemId: 4, discount: (price, coupons) => price * coupons * 0.5 },
+    offer: {
+      itemId: 4,
+      description: "Get a third off Butter!",
+      discount: (price, coupons) => price * coupons * 0.5,
+    },
   },
 ];
 

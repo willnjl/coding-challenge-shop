@@ -3,6 +3,7 @@ import Availible from "./Availible";
 import Price from "./Price";
 import Quantity from "./buttons/Quantity";
 import AddToCart from "./buttons/AddToCart";
+import Offer from "./Offer";
 
 export default function Product({ item, handleSubmit }) {
   const [quantity, setQuantity] = useState(0);
@@ -19,14 +20,14 @@ export default function Product({ item, handleSubmit }) {
     }
   }, [item.stock]);
 
+  let shadow = item.id % 5;
+
   return (
-    <div class={"product"}>
-      {/* <h2>{item.name}</h2>
-       */}
+    <div class={"product shadow--" + shadow}>
+      <h2>{item.name}</h2>
       <img class={"img"} src={item.imgUrl} />
       <Availible unavailible={unavailible} stock={item.stock} />
       <Price price={item.price} />
-      {/* <Offer /> */}
       <Quantity
         stock={item.stock}
         quantity={quantity}
@@ -37,6 +38,7 @@ export default function Product({ item, handleSubmit }) {
         handleSubmit={() => handleSubmit(item, quantity)}
         unavailible={unavailible || quantity === 0}
       />
+      <Offer id={item.id} />
     </div>
   );
 }

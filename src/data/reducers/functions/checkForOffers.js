@@ -1,7 +1,3 @@
-// When you buy a Cheese, you get a second Cheese free!
-// When you buy a Soup, you get a half price Bread!
-// Get a third off Butter!
-
 const applyOffers = (state) => {
   const { cart } = state;
   cart.forEach((item) => {
