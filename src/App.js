@@ -5,7 +5,7 @@ import Shop from "./components/Shop";
 function App() {
   return (
     <Layout>
-      {/* <Shop /> */}
+      <Shop />
       <Till />
     </Layout>
   );

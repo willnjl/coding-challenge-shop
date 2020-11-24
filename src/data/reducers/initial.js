@@ -64,3 +64,60 @@ export const initCart = {
   discount: 0,
   total: 0,
 };
+// export const initCart = {
+//   cart: [
+//     {
+//       id: 3,
+//       name: "soup",
+//       price: 0.6,
+//       quantity: 2,
+//       offer: {
+//         itemId: 0,
+//         description: "When you buy a Soup, you can have a half price Bread!",
+//       },
+//       discount: 0,
+//     },
+//     {
+//       id: 4,
+//       name: "butter",
+//       price: 1.2,
+//       quantity: 2,
+//       offer: {
+//         itemId: 4,
+//         description: "Get a third off Butter!",
+//       },
+//       discount: 1.2,
+//     },
+//     {
+//       id: 0,
+//       name: "bread",
+//       price: 1.2,
+//       quantity: 2,
+//       offer: null,
+//       discount: 1.2,
+//     },
+//     {
+//       id: 1,
+//       name: "milk",
+//       price: 0.5,
+//       quantity: 2,
+//       offer: null,
+//       discount: 0,
+//     },
+//     {
+//       id: 2,
+//       name: "cheese",
+//       price: 0.9,
+//       quantity: 3,
+//       offer: {
+//         itemId: 2,
+//         description:
+//           "When you buy a Cheese, you can have a second Cheese free!",
+//       },
+//       discount: 0.9,
+//     },
+//   ],
+//   subtotal: "9.70",
+//   discount: "3.30",
+//   total: 6.3999999999999995,
+// };
