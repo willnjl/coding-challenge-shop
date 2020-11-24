@@ -1,14 +1,27 @@
 import React from "react";
 
-export default function Quantity({ handleClick, quantity, stock }) {
+export default function Quantity({
+  handleClick,
+  quantity,
+  unavailible,
+  stock,
+}) {
   return (
-    <div>
-      <button disabled={quantity === stock} onClick={() => handleClick(1)}>
-        +
-      </button>
-      <div>{quantity}</div>
-      <button disabled={quantity === 0} onClick={() => handleClick(-1)}>
+    <div className={"btn_container"}>
+      <button
+        disabled={unavailible}
+        onClick={() => handleClick(-1)}
+        className={"btn-quantity--minus"}
+      >
         -
+      </button>
+      <span className={"quantity"}>{quantity}</span>
+      <button
+        disabled={unavailible || quantity === stock}
+        className={"btn-quantity--plus"}
+        onClick={() => handleClick(1)}
+      >
+        +
       </button>
     </div>
   );

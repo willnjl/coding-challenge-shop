@@ -1,11 +1,9 @@
 import React from "react";
 
-export default function Availible({ stock }) {
+export default function Availible({ unavailible, stock }) {
   return (
-    <div>
-      {stock > 0
-        ? `${stock} remaining in stock`
-        : `We're sorry we're out of stock`}
+    <div className={`availible--${unavailible ? "out" : "in"}`}>
+      {unavailible ? `sorry we're out` : `${stock} in stock`}
     </div>
   );
 }

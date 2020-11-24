@@ -22,7 +22,10 @@ export const initItems = [
     price: 0.9,
     imgUrl: "assets/cheese.jpeg",
     stock: 6,
-    offer: { itemId: 2, discount: (price, quantity) => (quantity / 2) * price },
+    offer: {
+      itemId: 2,
+      discount: (price, coupons) => ((coupons - (coupons % 2)) / 2) * price,
+    },
   },
   {
     id: 3,
@@ -30,7 +33,7 @@ export const initItems = [
     price: 60,
     imgUrl: "assets/soup.jpeg",
     stock: 5,
-    offer: { itemId: 0, discount: (price, quantity) => price * quantity * 0.5 },
+    offer: { itemId: 0, discount: (price, coupons) => price * coupons * 0.5 },
   },
   {
     id: 4,
@@ -38,12 +41,13 @@ export const initItems = [
     price: 1.2,
     imgUrl: "assets/butter.jpeg",
     stock: 5,
-    offer: { itemId: 4, discount: (price, quantity) => price * quantity * 0.5 },
+    offer: { itemId: 4, discount: (price, coupons) => price * coupons * 0.5 },
   },
 ];
 
 export const initCart = {
   cart: [],
-  total: 0,
+  subtotal: 0,
   discount: 0,
+  total: 0,
 };

@@ -1,6 +1,4 @@
 @import "settings";
 @import "layout";
-
-.test {
-  border: 1px solid red;
-}
+@import "buttons";
+@import "./components/product/product.scss";

@@ -1,0 +1,14 @@
+.btn_container {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border-radius: $b-radius;
+  border: solid white 2px;
+  color: $text;
+  cursor: pointer;
+  &:disabled {
+    background-color: $grey;
+  }
+}

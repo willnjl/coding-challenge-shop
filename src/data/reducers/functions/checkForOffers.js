@@ -11,7 +11,7 @@ const applyOffers = (state) => {
       let discountedItem = cart.find(
         (product) => product.id === item.offer.itemId
       );
-      //if found calculate discount
+      //if found calculate discount and add to cart item
       if (discountedItem) {
         discountedItem.discount = item.offer.discount(
           discountedItem.price,

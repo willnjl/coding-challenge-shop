@@ -1,0 +1,14 @@
+.availible {
+  padding: 1rem;
+  border: solid $grey 1px;
+  text-align: center;
+  border-radius: $b-radius;
+
+  &--out {
+    color: #999;
+  }
+
+  &--in {
+    color: $text;
+  }
+}

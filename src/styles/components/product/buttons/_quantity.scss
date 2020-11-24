@@ -1,0 +1,30 @@
+.btn_container {
+  .btn-quantity {
+    padding: 0.5rem 1rem;
+    color: $text;
+    margin: 0.5rem;
+    font-weight: 600;
+
+    &:disabled {
+      background-color: $grey;
+    }
+
+    &--plus {
+      @extend .btn-quantity;
+      background-color: $blue;
+    }
+    &--minus {
+      @extend .btn-quantity;
+      background-color: $aqua;
+      &:hover {
+        border: 2px solid $text;
+      }
+    }
+  }
+}
+
+.quantity {
+  padding: 0.5rem;
+  //   border: 2px solid whit
+  border-radius: $b-radius;
+}
