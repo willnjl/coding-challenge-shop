@@ -1,0 +1,20 @@
+.table {
+  width: 100%;
+  border: 1px solid $grey;
+  td {
+    text-align: center;
+  }
+}
+.head {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  tbody {
+    tr {
+      width: 100%;
+      border: 1px black solid;
+    }
+  }
+}
