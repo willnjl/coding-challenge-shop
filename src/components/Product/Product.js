@@ -6,7 +6,7 @@ import AddToCart from "./buttons/AddToCart";
 import Offer from "./Offer";
 
 export default function Product({ item, handleSubmit }) {
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const [unavailible, setUnavailible] = useState(false);
 
   const handleClick = (val) => {
@@ -14,9 +14,10 @@ export default function Product({ item, handleSubmit }) {
   };
 
   useEffect(() => {
-    setQuantity(0);
+    setQuantity(1);
     if (item.stock === 0) {
       setUnavailible(true);
+      setQuantity(0);
     }
   }, [item.stock]);
 

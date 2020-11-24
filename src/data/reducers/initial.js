@@ -28,7 +28,7 @@ export const initItems = [
     stock: 6,
     offer: {
       itemId: 2,
-      description: "When you buy a Cheese, you can have a second Cheese free!",
+      description: "Two for the price of one!",
       discount: (price, coupons) => ((coupons - (coupons % 2)) / 2) * price,
     },
   },
@@ -40,19 +40,27 @@ export const initItems = [
     stock: 5,
     offer: {
       itemId: 0,
-      description: "When you buy a Soup, you can have a half price Bread!",
+      description: "Buy soup and get a bread half price!",
       discount: (price, coupons) => price * coupons * 0.5,
     },
   },
   {
     id: 4,
+    name: "toilet roll",
+    price: 10.99,
+    imgUrl: "assets/tp.jpeg",
+    stock: 0,
+    offer: null,
+  },
+  {
+    id: 5,
     name: "butter",
     price: 1.2,
     imgUrl: "assets/butter.jpeg",
     stock: 5,
     offer: {
       itemId: 4,
-      description: "Get a third off Butter!",
+      description: "Butter is a third off!",
       discount: (price, coupons) => price * coupons * 0.5,
     },
   },
