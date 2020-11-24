@@ -19,6 +19,7 @@ export default function Till({ cart }) {
           </tr>
         </thead>
         <tbody>
+          <tr></tr>
           {cart.cart.map((item) => {
             const { name, price, quantity, discount } = item;
             return (
@@ -28,9 +29,26 @@ export default function Till({ cart }) {
                 <td>{quantity}</td>
                 <td>{convertToCurrency(price * quantity)}</td>
                 <td>{convertToCurrency(discount)}</td>
+                <td>{convertToCurrency(price * quantity - discount)}</td>
               </tr>
             );
           })}
+        </tbody>
+      </table>
+      <table class="sum">
+        <tbody>
+          <tr>
+            <th scope={"row"}>subtotal</th>
+            <td>{"£" + cart.subtotal}</td>
+          </tr>
+          <tr>
+            <th scope={"row"}>Total</th>
+            <td>{"£" + cart.total}</td>
+          </tr>
+          <tr>
+            <th scope={"row"}>Saving</th>
+            <td>{"£" + cart.discount}</td>
+          </tr>
         </tbody>
       </table>
     </div>

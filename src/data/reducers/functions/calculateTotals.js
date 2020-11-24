@@ -12,7 +12,7 @@ const calculateTotals = (state) => {
     }, 0)
     .toFixed(2);
 
-  const total = subtotal - discount;
+  const total = (subtotal - discount).toFixed(2);
 
   return {
     ...state,
