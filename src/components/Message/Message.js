@@ -7,7 +7,7 @@ export default function Message() {
       <h2> We hope to hear from you again soon</h2>
       <div className="links__container">
         <p>
-          view the sourcecode on{" "}
+          view the sourcecode on
           <a
             href="https://github.com/willnjl/coding-challenge-shop"
             target={"_blank"}
