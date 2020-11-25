@@ -4,9 +4,8 @@
 
 - Keeping stock
 - Applies discounts automatically
-- React - Router
 - Subtotals and totals
-
+  
 ## View online
 - [view online here](https://willnjl.github.io/coding-challenge-shop/#/)
 
@@ -40,5 +39,10 @@
 - Butter with other things
 - A mixture of the above scenarios
 ## implementation
-- react / redux app
+- React
+- Redux State Management
+- Sass Styling
+- Material Ui table component
+- react-router-dom
+- gh-pages deployment
 
