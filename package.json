@@ -2,6 +2,7 @@
   "name": "goodenergy-show",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://willnl.github.io/coding-challenge-shop/",
   "dependencies": {
     "@emotion/react": "^11.1.1",
     "@emotion/styled": "^11.0.0",
@@ -10,6 +11,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "0s": "^1.0.0",
+    "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -20,6 +22,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
