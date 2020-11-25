@@ -54,11 +54,10 @@ export const initItems = [
     offer: {
       itemId: 1,
       description: "Buy soup and get a bread half price!",
-      // (bread / 2 )per soup
+
       discount: ({ price, quantity }, coupons) => {
         let x = (price * quantity) / 2;
         let y = (coupons * price) / 2;
-
         return x < y ? x : y;
       },
     },
