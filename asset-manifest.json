@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/coding-challenge-shop/static/css/main.82d9b28a.chunk.css",
-    "main.js": "/coding-challenge-shop/static/js/main.baa8e69f.chunk.js",
-    "main.js.map": "/coding-challenge-shop/static/js/main.baa8e69f.chunk.js.map",
+    "main.css": "/coding-challenge-shop/static/css/main.a45de8b0.chunk.css",
+    "main.js": "/coding-challenge-shop/static/js/main.f81616db.chunk.js",
+    "main.js.map": "/coding-challenge-shop/static/js/main.f81616db.chunk.js.map",
     "runtime-main.js": "/coding-challenge-shop/static/js/runtime-main.e7e66424.js",
     "runtime-main.js.map": "/coding-challenge-shop/static/js/runtime-main.e7e66424.js.map",
-    "static/js/2.2ec588bb.chunk.js": "/coding-challenge-shop/static/js/2.2ec588bb.chunk.js",
-    "static/js/2.2ec588bb.chunk.js.map": "/coding-challenge-shop/static/js/2.2ec588bb.chunk.js.map",
+    "static/js/2.661caa85.chunk.js": "/coding-challenge-shop/static/js/2.661caa85.chunk.js",
+    "static/js/2.661caa85.chunk.js.map": "/coding-challenge-shop/static/js/2.661caa85.chunk.js.map",
     "static/js/3.d01a3b38.chunk.js": "/coding-challenge-shop/static/js/3.d01a3b38.chunk.js",
     "static/js/3.d01a3b38.chunk.js.map": "/coding-challenge-shop/static/js/3.d01a3b38.chunk.js.map",
     "index.html": "/coding-challenge-shop/index.html",
-    "static/css/main.82d9b28a.chunk.css.map": "/coding-challenge-shop/static/css/main.82d9b28a.chunk.css.map",
-    "static/js/2.2ec588bb.chunk.js.LICENSE.txt": "/coding-challenge-shop/static/js/2.2ec588bb.chunk.js.LICENSE.txt"
+    "static/css/main.a45de8b0.chunk.css.map": "/coding-challenge-shop/static/css/main.a45de8b0.chunk.css.map",
+    "static/js/2.661caa85.chunk.js.LICENSE.txt": "/coding-challenge-shop/static/js/2.661caa85.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e7e66424.js",
-    "static/js/2.2ec588bb.chunk.js",
-    "static/css/main.82d9b28a.chunk.css",
-    "static/js/main.baa8e69f.chunk.js"
+    "static/js/2.661caa85.chunk.js",
+    "static/css/main.a45de8b0.chunk.css",
+    "static/js/main.f81616db.chunk.js"
   ]
 }
