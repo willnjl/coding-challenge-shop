@@ -26,7 +26,7 @@ export default function Product({ item, handleSubmit }) {
   return (
     <div class={"product shadow--" + shadow}>
       <h2>{item.name}</h2>
-      <img class={"img"} src={item.imgUrl} />
+      <img className={"img"} alt={"Product"} src={item.imgUrl} />
       <Availible unavailible={unavailible} stock={item.stock} />
       <Price price={item.price} />
       <Quantity

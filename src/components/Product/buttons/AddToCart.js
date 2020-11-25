@@ -1,5 +1,4 @@
 import React from "react";
-import Quantity from "./Quantity";
 
 export default function AddToCart({ handleSubmit, unavailible }) {
   return (

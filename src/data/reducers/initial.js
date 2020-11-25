@@ -59,9 +59,9 @@ export const initItems = [
     imgUrl: "assets/butter.jpeg",
     stock: 5,
     offer: {
-      itemId: 4,
+      itemId: 5,
       description: "Butter is a third off!",
-      discount: (price, coupons) => price * coupons * 0.5,
+      discount: (price, coupons) => (price * coupons) / 3,
     },
   },
 ];
