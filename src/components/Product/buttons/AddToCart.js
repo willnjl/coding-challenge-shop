@@ -5,7 +5,7 @@ export default function AddToCart({ handleSubmit, unavailible }) {
     <button
       onClick={handleSubmit}
       disabled={unavailible}
-      className={"btn-add-to-cart"}
+      className={"button btn-add-to-cart"}
     >
       add to cart
     </button>

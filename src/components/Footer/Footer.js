@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className={"footer__container"}>
-      <Link>start over</Link>
+      <Link>
+        <button className={"button btn-start-over"}>start over</button>
+      </Link>
       <div className="links__container">
         <p>
           view the source code on

@@ -3,12 +3,37 @@
   align-items: center;
 }
 
-button {
+.button {
   border-radius: $b-radius;
   border: solid white 2px;
   color: $text;
+  text-align: center;
   cursor: pointer;
   &:disabled {
     background-color: $grey;
+  }
+  &:hover {
+    border: 2px solid $text;
+  }
+}
+
+.btn-paynow {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+  width: 150px;
+  padding: 2rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: $yellow;
+  background: linear-gradient(45deg, $yellow 0%, $red 45%);
+  &:hover {
+    text-decoration: underline;
+  }
+  &[disabled] {
+    background: $grey;
   }
 }
