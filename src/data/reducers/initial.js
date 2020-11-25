@@ -41,7 +41,7 @@ export const initItems = [
     offer: {
       itemId: 3,
       description: "Two for the price of one!",
-      discount: (price, coupons) => ((coupons - (coupons % 2)) / 2) * price,
+      discount: ({ price }, coupons) => ((coupons - (coupons % 2)) / 2) * price,
     },
   },
   {
@@ -54,7 +54,13 @@ export const initItems = [
     offer: {
       itemId: 1,
       description: "Buy soup and get a bread half price!",
-      discount: (price, coupons) => price * coupons * 0.5,
+      // (bread / 2 )per soup
+      discount: ({ price, quantity }, coupons) => {
+        let x = (price * quantity) / 2;
+        let y = (coupons * price) / 2;
+
+        return x < y ? x : y;
+      },
     },
   },
   {
@@ -67,7 +73,7 @@ export const initItems = [
     offer: {
       itemId: 5,
       description: "Butter is a third off!",
-      discount: (price, coupons) => (price * coupons) / 3,
+      discount: ({ price }, coupons) => (price * coupons) / 3,
     },
   },
 ];

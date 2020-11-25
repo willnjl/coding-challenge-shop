@@ -10,7 +10,7 @@ const applyOffers = (state) => {
       //if found calculate discount and add to cart item
       if (discountedItem) {
         discountedItem.discount = item.offer.discount(
-          discountedItem.price,
+          discountedItem,
           item.quantity
         );
       }

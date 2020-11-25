@@ -13,7 +13,7 @@ const updateCart = (state, { item, quantity }) => {
     };
   }
   //if in cart => update quantity
-  // cart[index].quantity += quantity;
+  cart[index].quantity += quantity;
   return {
     ...state,
     cart,
