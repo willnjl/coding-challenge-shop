@@ -27,6 +27,11 @@
   - Special offers applied and their individual saving
   - Final total with savings applied
 
+#### special offers
+- When you buy a Cheese, you get a second Cheese free!
+- When you buy a Soup, you get a half price Bread!
+- Get a third off Butter!
+
 ### Scenarios
 - Buy a soup and two breads - only one bread should be reduced
 - Buy three cheeses - only one should be free
