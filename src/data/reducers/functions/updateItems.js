@@ -1,7 +1,9 @@
 const updateItems = (state, { item, quantity }) => {
-  const result = [...state];
-  result[item.id].stock = result[item.id].stock + quantity * -1;
-  return result;
+  let { id } = item;
+  let items = state.map((item, index) => {
+    return index === id ? { ...item, stock: item.stock - quantity } : item;
+  });
+  return items;
 };
 
 export default updateItems;

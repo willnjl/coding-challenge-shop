@@ -18,6 +18,8 @@ export default function Product({ item, handleSubmit }) {
     if (item.stock === 0) {
       setUnavailible(true);
       setQuantity(0);
+    } else {
+      setUnavailible(false);
     }
   }, [item.stock]);
 

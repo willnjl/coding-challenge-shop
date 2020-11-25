@@ -1,7 +1,7 @@
 const updateCart = (state, { item, quantity }) => {
   let cart = [...state.cart];
 
-  //item in cart?
+  //item in cart
   let index = state.cart.findIndex((cartItem) => cartItem.id === item.id);
   if (index === -1) {
     //if not create object for item
@@ -13,7 +13,7 @@ const updateCart = (state, { item, quantity }) => {
     };
   }
   //if in cart => update quantity
-  cart[index].quantity += quantity;
+  // cart[index].quantity += quantity;
   return {
     ...state,
     cart,
