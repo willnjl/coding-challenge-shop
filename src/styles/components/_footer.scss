@@ -1,0 +1,24 @@
+.footer__container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 25px;
+  border: 1px solid $grey;
+  padding: 1rem;
+  .links__container {
+    position: relative;
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+    p {
+      margin-right: 10px;
+    }
+    a > svg {
+      width: 25px;
+      fill: $text;
+    }
+  }
+}

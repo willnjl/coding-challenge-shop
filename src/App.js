@@ -4,6 +4,7 @@ import Till from "./components/Till";
 import Shop from "./components/Shop";
 import Message from "./components/Message/Message";
 import PayNow from "./components/PayNow/PayNow";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Till />
         </Layout>
       </Route>
+      <Footer />
     </Router>
   );
 }
