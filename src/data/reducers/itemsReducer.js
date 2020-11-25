@@ -5,6 +5,8 @@ const itemsReducer = (state = initItems, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
       return updateItems(state, action.payload);
+    case "RESTART":
+      return initItems;
     default:
       return state;
   }
