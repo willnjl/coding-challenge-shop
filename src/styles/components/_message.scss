@@ -1,0 +1,17 @@
+.message__container {
+  @extend .card;
+  margin-bottom: 1.2rem;
+  h1 {
+    font-size: 2rem;
+  }
+  .links__container {
+    display: flex;
+    align-items: center;
+
+    a > svg {
+      margin-left: 10px;
+      width: 45px;
+      fill: blue;
+    }
+  }
+}
