@@ -1,12 +1,18 @@
 # Good - Groceries Coding Challenge 
 
+## Features
+
+- Keeping stock
+- applyies discounts automatically
+- React - Router
+- Subtotals and totals
+
 ## To view online
 - [view online here](https://willnjl.github.io/coding-challenge-shop/#/)
 
 ## To view offline
 ### prerequisites
 - npm
-- internet
 ### steps
 1. clone repo
 2. `cd` into project directory
