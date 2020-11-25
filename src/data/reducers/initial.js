@@ -7,7 +7,8 @@ export const initItems = [
     id: 0,
     name: "toilet roll",
     price: 10.99,
-    imgUrl: "assets/tp.jpeg",
+    imgUrl:
+      "https://github.com/willnjl/coding-challenge-shop/blob/6ce9d1e333e3a4766ba118f46bc23749b939233d/public%2Fassets%2Ftp.jpeg?raw=true",
     stock: 0,
     offer: null,
   },
@@ -15,7 +16,8 @@ export const initItems = [
     id: 1,
     name: "bread",
     price: 1.2,
-    imgUrl: "./assets/bread.jpeg",
+    imgUrl:
+      "https://github.com/willnjl/coding-challenge-shop/blob/dd50d71a6b5c02af3cce85c3a9f68d1975cb4e39/public%2Fassets%2Fbread.jpeg?raw=true",
     stock: 5,
     discount: 0,
     offer: null,
@@ -24,7 +26,8 @@ export const initItems = [
     id: 2,
     name: "milk",
     price: 0.5,
-    imgUrl: "./assets/milk.jpeg",
+    imgUrl:
+      "https://github.com/willnjl/coding-challenge-shop/blob/dd50d71a6b5c02af3cce85c3a9f68d1975cb4e39/public%2Fassets%2Fmilk.jpeg?raw=true",
     stock: 7,
     offer: null,
   },
@@ -32,7 +35,8 @@ export const initItems = [
     id: 3,
     name: "cheese",
     price: 0.9,
-    imgUrl: "./assets/cheese.jpeg",
+    imgUrl:
+      "https://github.com/willnjl/coding-challenge-shop/blob/dd50d71a6b5c02af3cce85c3a9f68d1975cb4e39/public%2Fassets%2Fcheese.jpeg?raw=true",
     stock: 6,
     offer: {
       itemId: 3,
@@ -44,7 +48,8 @@ export const initItems = [
     id: 4,
     name: "soup",
     price: 0.6,
-    imgUrl: "./assets/soup.jpeg",
+    imgUrl:
+      "https://github.com/willnjl/coding-challenge-shop/blob/dd50d71a6b5c02af3cce85c3a9f68d1975cb4e39/public%2Fassets%2Fsoup.jpeg?raw=true",
     stock: 5,
     offer: {
       itemId: 1,
@@ -56,7 +61,8 @@ export const initItems = [
     id: 5,
     name: "butter",
     price: 1.2,
-    imgUrl: "./assets/butter.jpeg",
+    imgUrl:
+      "https://github.com/willnjl/coding-challenge-shop/blob/dd50d71a6b5c02af3cce85c3a9f68d1975cb4e39/public%2Fassets%2Fbutter.jpeg?raw=true",
     stock: 5,
     offer: {
       itemId: 5,
