@@ -1,16 +1,16 @@
-# Good - Groceries Coding Challenge 
+# Groceries Coding Challenge 
 
 ## Features
 
 - Keeping stock
-- applyies discounts automatically
+- Applies discounts automatically
 - React - Router
 - Subtotals and totals
 
-## To view online
+## View online
 - [view online here](https://willnjl.github.io/coding-challenge-shop/#/)
 
-## To view offline
+## View offline
 ### prerequisites
 - npm
 ### steps
