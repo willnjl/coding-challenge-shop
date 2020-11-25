@@ -1,17 +1,12 @@
 import React from "react";
-import { createStore, combineReducers, compose } from "redux";
+import { createStore, compose } from "redux";
 import { Provider } from "react-redux";
 import ReactDOM from "react-dom";
+
 import "./styles/main.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import itemsReducer from "./data/reducers/itemsReducer";
-import cartReducer from "./data/reducers/cartReducer";
-
-const rootReducer = combineReducers({
-  items: itemsReducer,
-  cart: cartReducer,
-});
+import rootReducer from "./data/reducers/rootReducer";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

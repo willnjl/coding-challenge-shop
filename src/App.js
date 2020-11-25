@@ -5,10 +5,11 @@ import Shop from "./components/Shop";
 import Message from "./components/Message/Message";
 import PayNow from "./components/PayNow/PayNow";
 import Footer from "./components/Footer/";
+import history from "./history";
 
 function App() {
   return (
-    <Router>
+    <Router history={history}>
       <Route exact path="/">
         <Layout>
           <Shop />

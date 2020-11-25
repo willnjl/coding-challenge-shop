@@ -52,7 +52,6 @@ export const initItems = [
       discount: (price, coupons) => price * coupons * 0.5,
     },
   },
-
   {
     id: 5,
     name: "butter",

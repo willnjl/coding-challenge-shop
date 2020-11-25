@@ -3,4 +3,4 @@ export const addToCart = (item, quantity) => ({
   payload: { item, quantity },
 });
 
-export const restart = () => ({ type: "RESTART" });
+export const restart = () => ({ type: "RESET" });

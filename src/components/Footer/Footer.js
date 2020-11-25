@@ -1,14 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Footer({ handleClick }) {
   return (
     <footer className={"footer__container"}>
-      <Link to="/">
-        <button className={"button btn-start-over"} onClick={handleClick}>
-          start over
-        </button>
-      </Link>
+      <button className={"button btn-start-over"} onClick={handleClick}>
+        start over
+      </button>
       <div className="links__container">
         <p>
           view the source code on

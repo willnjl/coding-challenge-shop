@@ -7,8 +7,6 @@ const cartReducer = (state = initCart, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
       return calculateTotals(checkForOffers(updateCart(state, action.payload)));
-    case "RESTART":
-      return initCart;
     default:
       return state;
   }
