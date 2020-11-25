@@ -8,11 +8,17 @@ export default function Message() {
       <div className="links__container">
         <p>
           view the sourcecode on{" "}
-          <a href="#" target={"_blank"}>
+          <a
+            href="https://github.com/willnjl/coding-challenge-shop"
+            target={"_blank"}
+          >
             Github.
           </a>
         </p>
-        <a href="#" target={"_blank"}>
+        <a
+          href="https://github.com/willnjl/coding-challenge-shop"
+          target={"_blank"}
+        >
           <svg
             // role="img"
             viewBox="0 0 24 24"
