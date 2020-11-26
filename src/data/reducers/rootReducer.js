@@ -7,11 +7,4 @@ const rootReducer = combineReducers({
   cart: cartReducer,
 });
 
-// const rootReducer = (state, action) => {
-//   if (action.type === "RESET") {
-//     state = undefined;
-//   }
-//   return appReducer(state, action);
-// };
-
 export default rootReducer;

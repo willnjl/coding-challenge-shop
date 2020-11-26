@@ -1,5 +1,6 @@
 const updateItems = (state, { item, quantity }) => {
-  let { id } = item;
+  const { id } = item;
+  //create new array and update stock.
   let items = state.map((item, index) => {
     return index === id ? { ...item, stock: item.stock - quantity } : item;
   });

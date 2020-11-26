@@ -5,6 +5,6 @@ import { addToCart } from "../../data/actions";
 const mapStateToProps = ({ items }) => ({ items });
 
 const mapDispatchToProps = (dispatch) => ({
-  handleSubmit: (id, quantity) => dispatch(addToCart(id, quantity)),
+  handleSubmit: (item, quantity) => dispatch(addToCart(item, quantity)),
 });
 export default connect(mapStateToProps, mapDispatchToProps)(Product);
